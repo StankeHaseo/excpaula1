@@ -18,17 +18,17 @@ jobs:
       run: npm install
 
     - name: Run Tests
-      run: |
+      run: npm test
         # Comandos para executar os testes
 
     - name: Build Project
-      run: |
+      run: npm run build
         # Comandos para construir o projeto
 
     - name: Package Code
-      run: |
+      run: npm package
         # Comandos para empacotar o código
 
     - name: Deploy to Hosting Service
-      run: |
+      run: npm run deploy 
         # Comandos para implantar o código em um serviço de hospedagem
