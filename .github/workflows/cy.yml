@@ -1,0 +1,34 @@
+name: Continuous Integration and Delivery
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Tests
+      run: |
+        # Comandos para executar os testes
+
+    - name: Build Project
+      run: |
+        # Comandos para construir o projeto
+
+    - name: Package Code
+      run: |
+        # Comandos para empacotar o código
+
+    - name: Deploy to Hosting Service
+      run: |
+        # Comandos para implantar o código em um serviço de hospedagem
